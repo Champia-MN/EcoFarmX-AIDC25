@@ -1,16 +1,16 @@
-# 🌱 EcoFarmX – Smart Automated Farming System
+#  EcoFarmX – Smart Automated Farming System
 
 EcoFarmX is an IoT-enabled smart farming system built with Flutter and Firebase. It helps monitor and control agricultural environments in real-time, powered by a solar backup.
 
-## 🚀 Features
+##  Features
 
-- 🌡️ Real-time Monitoring (Temp, Moisture, Humidity, Light, Fire)
-- 🔌 Device Control (Pump, Lights, Sprinklers)
-- ☀️ Solar Backup Monitoring
-- 🔐 Firebase Authentication
-- 📱 Mobile App UI in Flutter
+-  Real-time Monitoring (Temp, Moisture, Humidity, Light, Fire)
+-  Device Control (Pump, Lights, Sprinklers)
+-  Solar Backup Monitoring
+-  Firebase Authentication
+-  Mobile App UI in Flutter
 
-## 🛠️ Project Structure
+##  Project Structure
 
 - `lib/screens` – UI pages like Dashboard, Control, Login
 - `lib/widgets` – Custom buttons, cards, and indicators
@@ -18,7 +18,7 @@ EcoFarmX is an IoT-enabled smart farming system built with Flutter and Firebase.
 - `lib/models` – Sensor and user data models
 - `lib/utils` – Constants, themes
 
-## 🔧 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites:
 - Flutter SDK
