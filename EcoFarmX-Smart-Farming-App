@@ -1,0 +1,163 @@
+lib/
+├── main.dart
+├── app.dart
+├── firebase_options.dart  // Add your Firebase config here
+├── models/
+│   └── sensor_data_model.dart
+├── services/
+│   └── sensor_service.dart
+├── pages/
+│   ├── login_page.dart
+│   ├── home_page.dart
+│   ├── dashboard_page.dart
+│   ├── monitoring_page.dart
+│   ├── device_control_page.dart
+│   └── settings_page.dart
+└── widgets/
+    ├── sensor_tile.dart
+    └── control_button.dart
+
+// main.dart
+import 'package:flutter/material.dart';
+import 'app.dart';
+
+void main() {
+  runApp(const EcoFarmXApp());
+}
+
+// app.dart
+import 'package:flutter/material.dart';
+import 'pages/login_page.dart';
+import 'pages/home_page.dart';
+
+class EcoFarmXApp extends StatelessWidget {
+  const EcoFarmXApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'EcoFarmX',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.green),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const LoginPage(),
+        '/home': (context) => const HomePage(),
+      },
+    );
+  }
+}
+
+// pages/login_page.dart
+import 'package:flutter/material.dart';
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () => Navigator.pushReplacementNamed(context, '/home'),
+          child: const Text('Login to EcoFarmX'),
+        ),
+      ),
+    );
+  }
+}
+
+// pages/home_page.dart
+import 'package:flutter/material.dart';
+import 'dashboard_page.dart';
+import 'monitoring_page.dart';
+import 'device_control_page.dart';
+import 'settings_page.dart';
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int _selectedIndex = 0;
+
+  static final List<Widget> _pages = <Widget>[
+    DashboardPage(),
+    MonitoringPage(),
+    DeviceControlPage(),
+    SettingsPage(),
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() => _selectedIndex = index);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('EcoFarmX')),
+      body: _pages[_selectedIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: 'Dashboard'),
+          BottomNavigationBarItem(icon: Icon(Icons.monitor), label: 'Monitor'),
+          BottomNavigationBarItem(icon: Icon(Icons.power), label: 'Control'),
+          BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
+        ],
+      ),
+    );
+  }
+}
+
+// pages/dashboard_page.dart
+import 'package:flutter/material.dart';
+
+class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Dashboard Page'));
+  }
+}
+
+// pages/monitoring_page.dart
+import 'package:flutter/material.dart';
+
+class MonitoringPage extends StatelessWidget {
+  const MonitoringPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Real-time Monitoring Page'));
+  }
+}
+
+// pages/device_control_page.dart
+import 'package:flutter/material.dart';
+
+class DeviceControlPage extends StatelessWidget {
+  const DeviceControlPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Device Control Page'));
+  }
+}
+
+// pages/settings_page.dart
+import 'package:flutter/material.dart';
+
+class SettingsPage extends StatelessWidget {
+  const SettingsPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('Settings Page'));
+  }
+}
