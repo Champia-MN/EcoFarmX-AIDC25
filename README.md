@@ -15,19 +15,19 @@ EcoFarmX uses low-cost IoT sensors (ESP32, soil moisture, temperature, and humid
 
 ---
 
-## 🔧 Tech Stack
-- 📱 **FlutterFlow** – Mobile App UI
-- 🔥 **Firebase** – Realtime Database
-- 🧠 **ESP32 + Sensors** – Temperature, Humidity, Soil Moisture
-- ☀️ **Solar Power** – Optional sustainable hardware power
-- 🌐 **GitHub** – Project Repository
+##  Tech Stack
+-  **FlutterFlow** – Mobile App UI
+-  **Firebase** – Realtime Database
+-  **ESP32 + Sensors** – Temperature, Humidity, Soil Moisture
+-  **Solar Power** – Optional sustainable hardware power
+-  **GitHub** – Project Repository
 
 ---
 
 ## 📸 Screenshots
 
 ### 1️⃣ Login Page
-![Login Page](https://raw.githubusercontent.com/Champia-MN/EcoFarmX-Hackorbit25/main/Login_page.jpg)
+![Login Page](https://raw.githubusercontent.com/Champia-MN/EcoFarmX-AIDC25/main/Loginpage.jpg)
 
 ### 2️⃣ Home page
 ![Home page](https://raw.githubusercontent.com/Champia-MN/EcoFarmX-Hackorbit25/main/Home_page.jpg)
