@@ -42,19 +42,19 @@ EcoFarmX uses low-cost IoT sensors (ESP32, soil moisture, temperature, and humid
 ![Device control](https://raw.githubusercontent.com/Champia-MN/EcoFarmX-AIDC25/main/Device%20control.jpg)
 
 ### 6️⃣ Settings page
-![Settings page](https://raw.githubusercontent.com/Champia-MN/EcoFarmX-Hackorbit25/main/Settings_page.jpg)
+![Settings page](https://raw.githubusercontent.com/Champia-MN/EcoFarmX-AIDC25/main/Setting.jpg)
 
 ---
 
-## 🧠 Innovation Highlights
-- Live data monitoring from farm to phone 📲
-- Solar-powered hardware for eco-sustainability ☀️
-- Scalable for small and large farms 🌾
-- Easy-to-use interface for non-tech farmers 👨‍🌾
+##  Innovation Highlights
+- Live data monitoring from farm to phone 
+- Solar-powered hardware for eco-sustainability ☀
+- Scalable for small and large farms 
+- Easy-to-use interface for non-tech farmers 
 
 ---
 
-## 🌱 Environmental Impact
+##  Environmental Impact
 - Reduces excessive water usage by alerting moisture status
 - Promotes sustainable farming practices
 - Increases yield while conserving natural resources
@@ -64,12 +64,14 @@ EcoFarmX uses low-cost IoT sensors (ESP32, soil moisture, temperature, and humid
 ## 📝 Submission Details
 - 👤 **Participant**: Champia MN
 - 👤 **Participant**: Vanitha S
+- 👤 **Participant**: Sai Abirami SA
+- 👤 **Participant**: Kannika S
 - 🧠 **Project Name**: EcoFarmX
-- 🏆 **Event**: HackOrbit National Hackathon 2025
+- 🏆 **Event**: All India Developers Challenge 2025
  
 ---
 
- ## 🔧 Firebase Setup
+ ##  Firebase Setup
 - Enable Authentication (email/password)
 - Set up Realtime Database / Firestore
 - Add your Firebase config to `firebase_options.dart`
